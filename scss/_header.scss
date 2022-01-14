@@ -1,0 +1,56 @@
+header{
+    @extend .flexItemCentrado;
+    width: 100%;
+    background-color: $claro;
+    justify-content: space-between;
+    padding: 0.5% 15%;
+    position: fixed;
+    top: 0%;
+    z-index: 1;
+
+    h1{
+        font-family: $marca;
+        font-size: 1.8em;
+    }
+
+    a{
+        font-weight: $negrita;
+        white-space: nowrap;
+    }
+
+    a:hover{
+        color: $oscuro;
+    }
+
+    ul{
+        margin-left: 0%;
+        padding-left: 0%;
+    
+        li{
+            display: inline;
+            list-style: $no;
+            padding: 0em 0em 0em 1.5em;
+        }
+    }
+}
+
+.headerLogo{
+    @extend .flexItemCentrado;
+    justify-content: flex-start;
+    width: 100%;
+
+    div{
+        margin-right: 3%;
+    }
+}
+
+nav{
+    
+    ul{
+        margin-bottom: 0%;
+
+        li{
+            font-weight: 100;
+        }
+    }
+}

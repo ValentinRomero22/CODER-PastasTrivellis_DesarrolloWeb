@@ -1,0 +1,94 @@
+footer{
+    @extend .flexJustifyCentrado;
+    flex-direction: column;
+    padding: 2% 15%;
+    background-color: $claro;
+    margin-top: 3%;
+
+    h2{
+        font-family: $marca;
+        font-size: 1.8em;
+        font-weight: $negrita;
+    }
+
+    ul{
+        margin: 0%;
+        padding: 0%;
+        
+        li{
+            display: inline;
+            list-style: $no;
+        }
+    }
+}
+
+.slogan{
+    @extend .flexItemCentrado;
+    flex-direction: column;
+
+    h2{
+        margin: 0%;
+        color: $contraste;
+    }
+
+    p{
+        font-size: 0.9em;
+        font-weight: $negrita;
+    }
+}
+
+.redes{
+
+    ul{
+        @extend .flexJustifyCentrado;
+        
+        li:not(:first-child){
+            margin-left: 2%;
+        }
+    }
+}
+
+.facebook {
+
+    & img:last-child{
+        display: $no;
+    }
+
+    &:hover img:last-child{
+        display: block;
+    }
+
+    &:hover img:first-child{
+        display: $no;
+    }
+}
+
+.instagram {
+
+    & img:last-child{
+        display: $no;
+    }
+
+    &:hover img:last-child{
+        display: block;
+    }
+
+    &:hover img:first-child{
+        display: $no;
+    }
+}
+
+.youtube {
+
+    & img:last-child{
+        display: $no;
+    }
+
+    &:hover img:last-child{
+        display: block;
+    }
+
+    &:hover img:first-child{
+        display: $no;
+    }
+}
