@@ -56,12 +56,14 @@ p{
 .boton{    
     padding: 1% 2%;
     font-size: 1em;
+    font-weight: $negrita;
     border: 1px solid $oscuro;
     border-radius: 0.3em;
     background-color: $blanco;
     color: $negro;
 
     &:hover{
+        transition: 0.3s;
         border: 1px solid $oscuro;
         background-color: $oscuro;
         color: $blanco;

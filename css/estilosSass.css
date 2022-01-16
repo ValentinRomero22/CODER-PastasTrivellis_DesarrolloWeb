@@ -42,11 +42,13 @@ p {
 .boton {
   padding: 1% 2%;
   font-size: 1em;
+  font-weight: bold;
   border: 1px solid #74554d;
   border-radius: 0.3em;
   background-color: #fff;
   color: #000; }
   .boton:hover {
+    transition: 0.3s;
     border: 1px solid #74554d;
     background-color: #74554d;
     color: #fff;
@@ -86,8 +88,6 @@ header {
   header a {
     font-weight: bold;
     white-space: nowrap; }
-  header a:hover {
-    color: #74554d; }
   header ul {
     margin-left: 0%;
     padding-left: 0%; }
@@ -95,6 +95,10 @@ header {
       display: inline;
       list-style: none;
       padding: 0em 0em 0em 1.5em; }
+    header ul a:hover {
+      transition: 0.3s;
+      border-bottom: 2px solid #74554d;
+      color: #74554d; }
 
 .headerLogo {
   justify-content: flex-start;
@@ -105,7 +109,7 @@ header {
 nav ul {
   margin-bottom: 0%; }
   nav ul li {
-    font-weight: 100; }
+    font-weight: bold; }
 
 article a img {
   width: 100%;
@@ -139,8 +143,7 @@ h4 {
   border: 1px solid #fff;
   font-size: 1em;
   padding-bottom: 3%;
-  border-bottom: 3px solid transparent;
-  animation-duration: 0.8s; }
+  border-bottom: 3px solid transparent; }
   .recomendado:hover {
     border-bottom: 3px solid #74554d; }
 
@@ -515,10 +518,24 @@ footer {
     padding: 3%; } }
 
 @media screen and (max-width: 378px) {
+  footer {
+    padding: 5% 15%; }
   .mapa iframe {
     width: 240px;
     height: 200px; }
   .contenedorCarrusel {
     margin-top: 16%; }
   .cuerpo {
-    margin-top: 20%; } }
+    margin-top: 20%; }
+    .cuerpo p {
+      font-size: 1.2em; }
+    .cuerpo h3 {
+      font-size: 1.4em; }
+  .grillaInfo {
+    grid-template-areas: "textoUno textoUno textoUno"  "imagenUno imagenUno imagenUno" "textoDos textoDos textoDos" "imagenDos imagenDos imagenDos" "textoTres textoTres textoTres" "imagenTres imagenTres imagenTres" "textoCuatro textoCuatro textoCuatro" "imagenCuatro imagenCuatro imagenCuatro";
+    grid-template-columns: 48% 4% 48%;
+    grid-template-rows: 200px 200px 200px 150px 200px 200px 200px;
+    row-gap: 6%;
+    margin: 28% 0% 260% 0%; }
+    .grillaInfo p {
+      font-size: 1.3em; } }

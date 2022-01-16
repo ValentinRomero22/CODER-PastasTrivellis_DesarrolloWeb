@@ -294,9 +294,16 @@
 
 @media screen and (max-width: 378px) {
 
-    .mapa iframe{
-        width: 240px;
-        height: 200px;
+    footer{
+        padding: 5% 15%;
+    }
+
+    .mapa{
+
+        iframe{
+            width: 240px;
+            height: 200px;
+        }
     }
 
     .contenedorCarrusel{
@@ -305,5 +312,33 @@
 
     .cuerpo{
         margin-top: 20%;
+
+        p{
+            font-size: 1.2em;
+        }
+
+        h3{
+            font-size: 1.4em;
+        }
+    }
+
+    .grillaInfo{
+        grid-template-areas: 
+        "textoUno textoUno textoUno" 
+        "imagenUno imagenUno imagenUno"
+        "textoDos textoDos textoDos"
+        "imagenDos imagenDos imagenDos"
+        "textoTres textoTres textoTres"
+        "imagenTres imagenTres imagenTres"
+        "textoCuatro textoCuatro textoCuatro"
+        "imagenCuatro imagenCuatro imagenCuatro";
+        grid-template-columns: 48% 4% 48%;
+        grid-template-rows: 200px 200px 200px 150px 200px 200px 200px; 
+        row-gap: 6%;
+        margin: 28% 0% 260% 0%;
+    
+        p{
+            font-size: 1.3em;        
+        }
     }
 }
