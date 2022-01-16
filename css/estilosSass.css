@@ -120,7 +120,7 @@ article a p {
 article a:hover {
   color: #000; }
 
-article a h4 {
+h4 {
   text-decoration: none;
   font-size: 1.2em; }
 
@@ -412,11 +412,9 @@ footer {
   .cajaEstrellas h3 {
     font-size: 1.2em; }
   .ubicacion {
-    display: grid;
     grid-template-columns: 1fr;
     grid-template-areas: "ubicacion" "mapa" "contactos";
     grid-column-gap: 3%;
-    margin-bottom: 5%;
     padding: 0%; }
   .ubicacion h3 {
     font-size: 1.2em; }
@@ -430,6 +428,8 @@ footer {
 @media screen and (max-width: 768px) {
   h2 {
     font-size: 1.8em; }
+  h4 {
+    font-size: 1.5em; }
   a {
     font-size: 0.8em; }
   header {
@@ -448,6 +448,10 @@ footer {
     margin-bottom: 3%; }
   .cuerpo {
     margin-top: 12%; }
+    .cuerpo p {
+      font-size: 1.2em; }
+    .cuerpo h3 {
+      font-size: 1.4em; }
   .tituloRecomendado {
     margin-top: -12%; }
   .grillaInfo p {
@@ -457,13 +461,33 @@ footer {
   .pedidos {
     margin-top: -8%; }
   .nav-item a {
-    font-size: 1em; } }
+    font-size: 1em; }
+  .grillaInfo {
+    grid-template-areas: "textoUno textoUno textoUno"  "imagenUno imagenUno imagenUno" "textoDos textoDos textoDos" "imagenDos . imagenTres" "textoTres textoTres textoTres" "imagenCuatro imagenCuatro imagenCuatro" "textoCuatro textoCuatro textoCuatro";
+    grid-template-rows: 200px 200px 200px 200px 200px 200px 200px;
+    grid-template-columns: 45% 10% 45%;
+    row-gap: 2%;
+    margin-bottom: 25%; }
+    .grillaInfo p {
+      font-size: 1.3em; }
+  .textoUno {
+    padding-right: 0%; }
+  .textoDos {
+    padding-left: 0%; }
+  .textoTres {
+    padding-right: 0%; }
+  .textoCuatro {
+    padding-left: 0%; }
+  .imagenGrilla {
+    border-radius: 10px; } }
 
 @media screen and (max-width: 480px) {
-  a h3 {
-    font-size: 1.5em; }
   h1 {
     font-size: 1.5em; }
+  h2 {
+    font-size: 1.9em; }
+  .contenedorCarrusel {
+    margin-top: 14%; }
   .mapa iframe {
     width: 280px;
     height: 250px; }
@@ -473,9 +497,28 @@ footer {
     .catalogo p {
       font-size: 1.1em; }
   .contacto h3 {
-    font-size: 1em; } }
+    font-size: 1em; }
+  .cuerpo {
+    margin-top: 15%; }
+    .cuerpo p {
+      font-size: 1.3em; }
+    .cuerpo h3 {
+      font-size: 1.6em; }
+  .grillaInfo {
+    grid-template-columns: 48% 4% 48%;
+    grid-template-rows: 200px 200px 200px 150px 200px 200px 200px;
+    row-gap: 4%;
+    margin: 15% 0% 80% 0%; }
+    .grillaInfo p {
+      font-size: 1.3em; }
+  .boton {
+    padding: 3%; } }
 
 @media screen and (max-width: 378px) {
   .mapa iframe {
     width: 240px;
-    height: 200px; } }
+    height: 200px; }
+  .contenedorCarrusel {
+    margin-top: 16%; }
+  .cuerpo {
+    margin-top: 20%; } }
