@@ -19,7 +19,7 @@
     }
 
     .cuerpo{
-        margin-top: 6%
+        margin-top: 65px;
     }
 
     .redes{
@@ -53,7 +53,7 @@
     }    
 
     .cuerpo {
-        margin-top: 7%;
+        margin-top: 70px;
 
         p{
             font-size: 1em;
@@ -97,6 +97,48 @@
 
     .contenedorCarrusel{
         margin: 4% 0%;
+    }
+}
+
+@media screen and (max-width: 924px){
+
+    .grillaInfo{
+        grid-template-areas: 
+        "textoUno textoUno textoUno" 
+        "imagenUno imagenUno imagenUno"
+        "textoDos textoDos textoDos"
+        "imagenDos . imagenTres"
+        "textoTres textoTres textoTres"
+        "imagenCuatro imagenCuatro imagenCuatro"
+        "textoCuatro textoCuatro textoCuatro";
+        grid-template-rows: 200px 200px 200px 200px 200px 200px 200px; 
+        grid-template-columns: 45% 10% 45%;
+        row-gap: 2%;
+        margin: 0px 0px 100px 0px;
+    
+        p{
+            font-size: 1.3em;        
+        }
+    }
+
+    .textoUno{
+        padding-right: 0%;
+    }
+    
+    .textoDos{
+        padding-left: 0%;
+    }
+    
+    .textoTres{
+        padding-right: 0%;
+    }
+    
+    .textoCuatro{
+        padding-left: 0%;
+    }
+
+    .imagenGrilla{
+        border-radius: 10px;
     }
 }
 
@@ -152,7 +194,7 @@
     } 
 
     .cuerpo{
-        margin-top: 12%;
+        margin-top: 85px;
 
         p{
             font-size: 1.2em;
@@ -168,6 +210,7 @@
     }
 
     .grillaInfo{
+        margin: 20px 0px 100px 0px;
 
         p{
             font-size: 1.2em;
@@ -187,45 +230,6 @@
         a{
             font-size: 1em;
         }
-    }
-
-    .grillaInfo{
-        grid-template-areas: 
-        "textoUno textoUno textoUno" 
-        "imagenUno imagenUno imagenUno"
-        "textoDos textoDos textoDos"
-        "imagenDos . imagenTres"
-        "textoTres textoTres textoTres"
-        "imagenCuatro imagenCuatro imagenCuatro"
-        "textoCuatro textoCuatro textoCuatro";
-        grid-template-rows: 200px 200px 200px 200px 200px 200px 200px; 
-        grid-template-columns: 45% 10% 45%;
-        row-gap: 2%;
-        margin-bottom: 25%;
-    
-        p{
-            font-size: 1.3em;        
-        }
-    }
-
-    .textoUno{
-        padding-right: 0%;
-    }
-    
-    .textoDos{
-        padding-left: 0%;
-    }
-    
-    .textoTres{
-        padding-right: 0%;
-    }
-    
-    .textoCuatro{
-        padding-left: 0%;
-    }
-
-    .imagenGrilla{
-        border-radius: 10px;
     }
 }
 
@@ -265,22 +269,23 @@
     }
 
     .cuerpo{
-        margin-top: 15%;
+        margin-top: 95px;
 
         p{
-            font-size: 1.3em;
+            font-size: 1em;
         }
 
         h3{
-            font-size: 1.6em;
+            font-size: 1.2em;
         }
     }
 
     .grillaInfo{
         grid-template-columns: 48% 4% 48%;
-        grid-template-rows: 200px 200px 200px 150px 200px 200px 200px; 
+        grid-template-rows: 200px 200px 250px 150px 250px 200px 250px; 
         row-gap: 4%;
-        margin: 15% 0% 80% 0%;
+        margin: 65px 0px 200px 0px;
+        min-height: 1800px;
     
         p{
             font-size: 1.3em;        
@@ -311,7 +316,7 @@
     }
 
     .cuerpo{
-        margin-top: 20%;
+        margin-top: 80px;
 
         p{
             font-size: 1.2em;
@@ -335,7 +340,8 @@
         grid-template-columns: 48% 4% 48%;
         grid-template-rows: 200px 200px 200px 150px 200px 200px 200px; 
         row-gap: 6%;
-        margin: 28% 0% 260% 0%;
+        margin: 90px 0px 200px 0px;
+        min-height: 2400px;
     
         p{
             font-size: 1.3em;        
